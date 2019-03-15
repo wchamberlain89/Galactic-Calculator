@@ -11,10 +11,13 @@ _Author_ **Ward**
 1. [Technologies Used](#technologies-used)
 
 ### Description
+Javascript objects allowing a User to input a birthday and find out life expectancy and age on different planets.
+Used to practice testing with Jasmine and Karma
 
 ### Installation
-* Clone from https://github.com/TracyRe/<< repo >>.git
+* Clone from https://github.com/wchamberlain89/Galactic-Calculator.git
 * Run `$ npm install`
+* Use `$ npm run test` to view testing in Karma - Chrome Browser
 
 ### Development Specs
 
@@ -35,6 +38,4 @@ Can compare age and life expectancy on a given planet to see if they have alread
 * Webpack
 * Tested with Karma and Jasmine
 
-### License
-_license_
 
