@@ -1,74 +1,40 @@
-# _Project Name_
+# Super Galactic Age Calculator
 
-#### _Project prototypes project for Epicodus_
-
-_Published_ **<< Date >>**<br>
-_Author_ **Tracy Reith**
+_Published_ **<< 2/15/2019 >>**<br>
+_Author_ **Ward**
 
 1. [Description](#description)
-1. [Learning Objective](#learning-objective)
-1. [Target Audience/Users](#target-audience/users)
-1. [User Stories](#user-stories)
-1. [Product Requirements](#product-requirements)
-1. [Non-technical Requirements](#non-technical-requirements)
+1. [Installation](#installation)
 1. [Development Specs](#development-specs)
 1. [Stretch Goals](#stretch-goals)
-1. [Installation](#installation)
 1. [Known Bugs](#known-bugs)
 1. [Technologies Used](#technologies-used)
-1. [License](#license)
 
 ### Description
-_Brief project description. Created for Epicodus Front End Development course._
-
-### Learning Objective
-_Learning objective._
-
-### Target Audience/Users
-* _user_
-* _user_
-
-### User Stories
-**As a** _archetype_,<br>
-**I want** _to be able to do something_,<br>
-**So that** _I can achieve a goal_.
-
-### Product Requirements
-* _requirement_
-* _requirement_
-* _requirement_
-
-### Non-technical Requirements
-* _requirement_
-* _requirement_
-* _requirement_
-
-### Development Specs
-
-Specification | Input | Output
-------------- | ----- | ------
-_spec_ | _input_ | _output_
-
-### Stretch Goals
-* _goal_
-* _goal_
-* _goal_
 
 ### Installation
 * Clone from https://github.com/TracyRe/<< repo >>.git
 * Run `$ npm install`
 
+### Development Specs
+
+Specification | Input | Output
+------------- | ----- | ------
+Givin a birthday should be able to determine how old they are. | April, 11 1989 | 29
+Can Determine Age on Mecury based on that age | 29 | 120
+Can Determine Age on Venus based on that age | 29 | 46
+Can Determine Age on Mars based on that age | 29 | 15
+Can Determine Age on Jupiter based on that age | 29 | 2
+Can give the user life expectancy based on two options | Gender - Male and Country - Japan | 78.6 years old
+Can compare age and life expectancy on a given planet to see if they have already lived past thier life expectancy | Life-Expectancy on Mecury | You've lived 42 years past your life expectancy
 
 ### Known Bugs
 * None identified
 
 ### Technologies Used
-* HTML
-* Sass with variables and mixins
-* Javascript with jQuery
+* Webpack
 * Tested with Karma and Jasmine
 
 ### License
 _license_
 
-Copyright (c) 2019 Tracy Reith
