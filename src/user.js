@@ -10,12 +10,22 @@ export class User {
 	}
 
 	age() { 
-		return Math.floor(this.ageMs()/31536000000);
+		return Math.floor(this.ageMs() / 31536000000);
 	}
 
 	mercuryAge() {
-		var currentDate = new Date();
-		var diff = currentDate - this.birthdate;
-		return Math.floor(this.ageMs()/31536000000/.24);
+		return Math.floor(this.ageMs() / 31536000000 /.24);
+	}
+
+	venusAge() {
+		return Math.floor(this.ageMs() / 31536000000 / .62);
+	}
+
+	marsAge() {
+		return Math.floor(this.ageMs() / 31536000000 / 1.88);
+	}
+
+	jupiterAge() {
+		return Math.floor(this.ageMs() / 31536000000 / 11.86);
 	}
 }
