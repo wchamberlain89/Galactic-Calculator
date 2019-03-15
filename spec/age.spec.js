@@ -1,21 +1,25 @@
-import { age } from "./../src/age.js";
+import { User } from "./../src/user.js";
 
-var age = new Age(29);
 
-desribe("Years :", function(){
-	// expect("Calculate Earth Age Based on Birthdate", function(){
-	// 	it(age.earth()).toEqual(291);
-	// });
-	// expect("Calculate Venus Age Based on Birthdate", function(){
-	// 	it(age.earth()).toEqual(461);
-	// });
-	// expect("Calculate Mars Age Based on Birthdate", function(){
-	// 	it(age.earth()).toEqual(151);
-	// });
-	// expect("Calculate Jupiter Age Based on Birthdate", function(){
-	// 	it(age.earth()).toEqual(21);
-	// }); 
-	// expect("Calculate Mecury Age Based on Birthdate", function(){
-	// 	it(age.earth()).toEqual(1201);
-	// }); 
+describe("Years :", function(){
+	const user = new User("1989-04-11");
+	console.log(user);
+	
+	it("Calculate Earth User Based on Birthdate", function(){
+		expect(user.age()).toEqual(29);
+	});
+
+	it("Calculate Venus User Based on Birthdate", function(){
+		expect(user.venus()).toEqual(461);
+	});
+	it("Calculate Mars User Based on Birthdate", function(){
+		expect(user.mars()).toEqual(151);
+	});
+	it("Calculate Jupiter User Based on Birthdate", function(){
+		expect(user.jupiter()).toEqual(21);
+	}); 
+	it("Calculate Mecury User Based on Birthdate", function(){
+		expect(user.mecury()).toEqual(1201);
+	}); 
 });
+
