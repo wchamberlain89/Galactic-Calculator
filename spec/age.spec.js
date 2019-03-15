@@ -14,15 +14,15 @@ describe("Years :", function(){
 	}); 
 	
 	it("Calculate Venus User Based on Birthdate", function(){
-		expect(user.venusAge()).toEqual(461);
+		expect(user.venusAge()).toEqual(48);
 	});
 
 	it("Calculate Mars User Based on Birthdate", function(){
-		expect(user.marsAge()).toEqual(151);
+		expect(user.marsAge()).toEqual(15);
 	});
 
 	it("Calculate Jupiter User Based on Birthdate", function(){
-		expect(user.jupiterAge()).toEqual(21);
+		expect(user.jupiterAge()).toEqual(2);
 	});
 
 });
