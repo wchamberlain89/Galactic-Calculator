@@ -1,5 +1,5 @@
 import { User } from "./../src/user.js";
-
+import { lifeExpectancy } from "./../src/lifeExpectancy.js";
 
 describe("Years :", function(){
 	const user = new User("1989-04-11", "male", "unitedstates");
@@ -26,9 +26,30 @@ describe("Years :", function(){
 
 });
 
-describe("Life Expectancy :", function(){
-	const user = new User("1989-04-11", "male", "unitedstates");
-	it("Should return your life expectancy based on country and gender", function(){
-		expect(user.getLifeExpectancy()).toEqual(76);
-	})
+describe("Life Expectancy - Male", function(){
+	
+	const countries = Object.keys(lifeExpectancy);
+
+	countries.forEach(function(country, index){
+		
+
+		let	user = new User("1989-04-11", "male", country);
+
+		it("Should return a number for the life expectancy for " + country, function(){
+			expect(typeof user.lifeExpectancy).toEqual("number");
+		});
+
+		it("Should return correct life expectancy for - " + country, function(){
+			expect(user.lifeExpectancy).toEqual(lifeExpectancy[country].male);
+		});
+
+		it("Should return life expectancy no greater than 83 ", function(){
+			expect(user.lifeExpectancy).toBeLessThan(84);
+		});
+
+		it("Should return life expectancy no less than 64 ", function(){
+			expect(user.lifeExpectancy).toBeGreaterThan(63);
+		});
+	});
+
 });

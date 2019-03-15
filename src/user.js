@@ -7,6 +7,7 @@ export class User {
 		this.birthdate = new Date(birthdate);
 		this.gender = gender;
 		this.country = country;
+		this.lifeExpectancy = this.getLifeExpectancy();
 	}
 
 	ageMs() { 
