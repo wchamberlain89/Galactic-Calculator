@@ -1,6 +1,12 @@
+import {lifeExpectancy} from './lifeExpectancy.js'
+
+
+
 export class User {
-	constructor(birthdate) {
+	constructor(birthdate, gender, country) {
 		this.birthdate = new Date(birthdate);
+		this.gender = gender;
+		this.country = country;
 	}
 
 	ageMs() { 
@@ -27,5 +33,9 @@ export class User {
 
 	jupiterAge() {
 		return Math.floor(this.ageMs() / 31536000000 / 11.86);
+	}
+
+	getLifeExpectancy() {
+		return lifeExpectancy.japan.all;
 	}
 }
