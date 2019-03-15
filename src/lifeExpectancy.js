@@ -4,6 +4,7 @@ export const lifeExpectancy = {
 		female : 86,
 		all : 84
 	} ,
+	
 	switzerland : {
 		male : 81,
 		female : 85,
@@ -22,7 +23,7 @@ export const lifeExpectancy = {
 		all : 82
 	} ,
 
-	southKorea : {
+	southkorea : {
 		male : 78,
 		female : 85,
 		all : 82
@@ -35,13 +36,13 @@ export const lifeExpectancy = {
 		all : 81
 	} ,
 
-	costaRica : {
+	costarica : {
 		male : 77,
 		female : 82,
 		all : 79
 	} ,
 
-	unitedStates : {
+	unitedstates : {
 		male : 76,
 		female : 81,
 		all : 79

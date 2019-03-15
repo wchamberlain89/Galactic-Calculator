@@ -36,6 +36,6 @@ export class User {
 	}
 
 	getLifeExpectancy() {
-		return lifeExpectancy.japan.all;
+		return lifeExpectancy[this.country][this.gender];
 	}
 }

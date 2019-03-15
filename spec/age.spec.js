@@ -2,7 +2,7 @@ import { User } from "./../src/user.js";
 
 
 describe("Years :", function(){
-	const user = new User("1989-04-11");
+	const user = new User("1989-04-11", "male", "unitedstates");
 	
 	it("Calculate Earth User Based on Birthdate", function(){
 		expect(user.age()).toEqual(29);
@@ -27,8 +27,8 @@ describe("Years :", function(){
 });
 
 describe("Life Expectancy :", function(){
-	const user = new User("1989-04-11");
+	const user = new User("1989-04-11", "male", "unitedstates");
 	it("Should return your life expectancy based on country and gender", function(){
-		expect(user.getLifeExpectancy()).toEqual("A life Expectancy");
+		expect(user.getLifeExpectancy()).toEqual(76);
 	})
 });
