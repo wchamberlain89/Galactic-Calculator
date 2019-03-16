@@ -1,14 +1,7 @@
 # Super Galactic Age Calculator
 
-_Published_ **<< 2/15/2019 >>**<br>
+_Published_  2/15/2019 <br>
 _Author_ **Ward**
-
-1. [Description](#description)
-1. [Installation](#installation)
-1. [Development Specs](#development-specs)
-1. [Stretch Goals](#stretch-goals)
-1. [Known Bugs](#known-bugs)
-1. [Technologies Used](#technologies-used)
 
 ### Description
 Javascript objects allowing a User to input a birthday and find out life expectancy and age on different planets.
